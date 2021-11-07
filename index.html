@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Shopping</title>
+</head>
+
+<body>
+    <header>
+        <div class="header__container">
+            <div class="header__info">
+                <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia suscipit cumque officiis sunt
+                    porro
+                    maiores hic quidem dolorum, ad voluptate dolore eos reprehenderit vero officia, velit, eaque esse
+                    voluptates aliquid.
+                </p>
+                <button>Botão</button>
+            </div>
+
+            <div class="header__img">
+                <img id="img-header" src="./image/image.svg" alt="Imagem de fundo do cabeçalho">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="card__container">
+            <div class="card__row">
+                <div class=" card">
+                    <img src="./assets/image1.jpg" alt="#">
+                    <div class="card__infos">
+                        <h2>Titulo do card</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, unde officiis.</p>
+                    </div>
+                </div>
+
+                <div class="card ">
+                    <img src="./assets/image2.jpg" alt="#">
+                    <div class="card__infos">
+                        <h2>Titulo do card</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, unde officiis.</p>
+                    </div>
+                </div>
+
+                <div class="card ">
+                    <img src="./assets/image3.jpg" alt="#">
+                    <div class="card__infos">
+                        <h2>Titulo do card</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, unde officiis.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card__row">
+                <div class="card ">
+                    <img src="./assets/image4.jpg" alt="#">
+                    <div class="card__infos">
+                        <h2>Titulo do card</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, unde officiis.</p>
+                    </div>
+                </div>
+
+                <div class="card ">
+                    <img src="./assets/image5.jpg" alt="#">
+                    <div class="card__infos">
+                        <h2>Titulo do card</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, unde officiis.</p>
+                    </div>
+                </div>
+
+                <div class="card ">
+                    <img src="./assets/image6.jpg" alt="#">
+                    <div class="card__infos">
+                        <h2>Titulo do card</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, unde officiis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="form__container">
+            <h1>Entre em contato</h1>
+            <div class="form_inputs">
+                <form>
+                    <input type="text" placeholder="Nome">
+                    <input type="email" placeholder="Email">
+                    <input type="tel" placeholder="Telefone">
+                    <textarea id="form__input__mensagem" placeholder="Mensagem"></textarea>
+                    <button class="scale-in-center">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '50px',
+            duration: 2000,
+            reset: true
+        });
+
+        ScrollReveal().reveal('.card', { delay: 200 });
+    </script>
+</body>
+
+</html>

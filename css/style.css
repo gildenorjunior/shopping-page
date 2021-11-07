@@ -1,0 +1,213 @@
+@import url(./reset.css);
+
+@font-face {
+  font-family: Lato Regular;
+  src: url(../fontes/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: Merriweather;
+  src: url(../fontes/Merriweather-Bold.ttf);
+}
+
+@font-face {
+  font-family: Merriweather-Regular;
+  src: url(../fontes/Merriweather-Regular.ttf);
+}
+
+:root {
+  --bgSite: #d7d4ff;
+  --buttonColor: #6c63ff;
+
+  --white: #ffffff;
+  --white300: #f9f9f9;
+
+  --title: #2b2b2b;
+  --text: #555555;
+
+  --titulo: 'Scheherazade New', serif;
+  --texto: 'Lato', sans-serif;
+}
+
+header {
+  background-color: var(--bgSite);
+  margin-bottom: 40px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  height: 500px;
+}
+
+.header__info {
+  max-width: 400px;
+  height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header__info > h1{
+  font-family: var(--titulo);
+  color: var(--title);
+}
+
+.header__info > p {
+  font-family: var(--texto);
+  color: var(--text);
+  line-height: 1.8;
+}
+
+.header__info > button {
+  width: 150px;
+  min-height: 50px;
+  background-color: var(--buttonColor);
+  border-radius: 5px;
+  font-family: var(--texto);
+  font-size: 1.9rem;
+  font-weight: 400;
+  color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.header__info > button:hover {
+  background-color: #4d44f8;
+  transform: scale(1.1);
+  transition: 0.8s all ease;
+}
+
+.header__info > button:hover {
+  cursor: pointer;
+}
+
+.header__img {
+  max-width: 500px;
+}
+
+.card__row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 340px;
+  height: 423px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.card__infos {
+  padding: 30px;
+  height: 200px;
+}
+
+.card__infos > h2 {
+  font-family: "Merriweather";
+}
+
+.card__infos > p {
+  font-family: "Lato Regular";
+  line-height: 1.8;
+}
+
+.card > img {
+  min-width: 100%;
+  display: block;
+  height: 222px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+footer {
+  background-color: var(--bgSite);
+  height: 650px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.form__container {
+  width: 500px;
+  height: 585px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.form__container h1 {
+  font-family: "Merriweather";
+  text-align: center;
+  color: var(--title)
+}
+
+.form_inputs > form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+form > input {
+  width: 100%;
+  height: 65px;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 15px;
+  font-family: "Lato Regular";
+  color: var(--texto);
+  font-size: 1em;
+}
+
+#form__input__mensagem {
+  width: 100%;
+  height: 180px;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 15px;
+  font-family: "Lato Regular";
+  color: var(--texto);
+  font-size: 1em;
+  padding: 15px;
+  resize: none;
+  border: none;
+}
+
+form > button {
+  margin-top: 20px;
+  height: 50px;
+  background-color: var(--buttonColor);
+  border-radius: 5px;
+  font-family: "Lato Regular";
+  font-size: 1.9rem;
+  font-weight: 400;
+  color: var(--white);
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+form > button:hover {
+  background-color: #4d44f8;
+  transform: scale(1.1);
+  transition: 0.8s all ease;
+}
+
+@media (max-width: 750px) {
+  .header__container {
+    flex-wrap: wrap;
+    height: 800px;
+    margin: 0 20px;
+  }
+
+  .form__container {
+    margin: 0 20px;
+  }
+}
